@@ -1,0 +1,225 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 264 384)
+	(text "rxproc" (rect 5 0 30 12)(font "Arial" ))
+	(text "inst" (rect 8 352 20 364)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 10 12)(font "Arial" ))
+		(text "clk" (rect 21 27 31 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "rst" (rect 0 0 10 12)(font "Arial" ))
+		(text "rst" (rect 21 43 31 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "fifoempty" (rect 0 0 38 12)(font "Arial" ))
+		(text "fifoempty" (rect 21 59 59 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 1))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "fifoalempty" (rect 0 0 44 12)(font "Arial" ))
+		(text "fifoalempty" (rect 21 75 65 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 1))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "rxdw[9..0]" (rect 0 0 38 12)(font "Arial" ))
+		(text "rxdw[9..0]" (rect 21 91 59 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "rxdq[95..0]" (rect 0 0 42 12)(font "Arial" ))
+		(text "rxdq[95..0]" (rect 21 107 63 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "extdfer" (rect 0 0 28 12)(font "Arial" ))
+		(text "extdfer" (rect 21 123 49 135)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128)(line_width 1))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "memrdack" (rect 0 0 43 12)(font "Arial" ))
+		(text "memrdack" (rect 21 139 64 151)(font "Arial" ))
+		(line (pt 0 144)(pt 16 144)(line_width 1))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "dmardfifodw[8..0]" (rect 0 0 69 12)(font "Arial" ))
+		(text "dmardfifodw[8..0]" (rect 21 155 90 167)(font "Arial" ))
+		(line (pt 0 160)(pt 16 160)(line_width 3))
+	)
+	(port
+		(pt 248 32)
+		(output)
+		(text "ext_add[21..0]" (rect 0 0 55 12)(font "Arial" ))
+		(text "ext_add[21..0]" (rect 172 27 227 39)(font "Arial" ))
+		(line (pt 248 32)(pt 232 32)(line_width 3))
+	)
+	(port
+		(pt 248 48)
+		(output)
+		(text "iosel" (rect 0 0 16 12)(font "Arial" ))
+		(text "iosel" (rect 211 43 227 55)(font "Arial" ))
+		(line (pt 248 48)(pt 232 48)(line_width 1))
+	)
+	(port
+		(pt 248 64)
+		(output)
+		(text "memsel1" (rect 0 0 35 12)(font "Arial" ))
+		(text "memsel1" (rect 192 59 227 71)(font "Arial" ))
+		(line (pt 248 64)(pt 232 64)(line_width 1))
+	)
+	(port
+		(pt 248 80)
+		(output)
+		(text "memsel2" (rect 0 0 36 12)(font "Arial" ))
+		(text "memsel2" (rect 191 75 227 87)(font "Arial" ))
+		(line (pt 248 80)(pt 232 80)(line_width 1))
+	)
+	(port
+		(pt 248 112)
+		(output)
+		(text "ext_rd" (rect 0 0 25 12)(font "Arial" ))
+		(text "ext_rd" (rect 202 107 227 119)(font "Arial" ))
+		(line (pt 248 112)(pt 232 112)(line_width 1))
+	)
+	(port
+		(pt 248 128)
+		(output)
+		(text "ext_wr" (rect 0 0 27 12)(font "Arial" ))
+		(text "ext_wr" (rect 200 123 227 135)(font "Arial" ))
+		(line (pt 248 128)(pt 232 128)(line_width 1))
+	)
+	(port
+		(pt 248 144)
+		(output)
+		(text "fiford" (rect 0 0 21 12)(font "Arial" ))
+		(text "fiford" (rect 206 139 227 151)(font "Arial" ))
+		(line (pt 248 144)(pt 232 144)(line_width 1))
+	)
+	(port
+		(pt 248 160)
+		(output)
+		(text "led0" (rect 0 0 15 12)(font "Arial" ))
+		(text "led0" (rect 212 155 227 167)(font "Arial" ))
+		(line (pt 248 160)(pt 232 160)(line_width 1))
+	)
+	(port
+		(pt 248 176)
+		(output)
+		(text "led1" (rect 0 0 14 12)(font "Arial" ))
+		(text "led1" (rect 213 171 227 183)(font "Arial" ))
+		(line (pt 248 176)(pt 232 176)(line_width 1))
+	)
+	(port
+		(pt 248 192)
+		(output)
+		(text "led2" (rect 0 0 15 12)(font "Arial" ))
+		(text "led2" (rect 212 187 227 199)(font "Arial" ))
+		(line (pt 248 192)(pt 232 192)(line_width 1))
+	)
+	(port
+		(pt 248 208)
+		(output)
+		(text "led3" (rect 0 0 15 12)(font "Arial" ))
+		(text "led3" (rect 212 203 227 215)(font "Arial" ))
+		(line (pt 248 208)(pt 232 208)(line_width 1))
+	)
+	(port
+		(pt 248 224)
+		(output)
+		(text "tag[7..0]" (rect 0 0 31 12)(font "Arial" ))
+		(text "tag[7..0]" (rect 196 219 227 231)(font "Arial" ))
+		(line (pt 248 224)(pt 232 224)(line_width 3))
+	)
+	(port
+		(pt 248 240)
+		(output)
+		(text "reqid[15..0]" (rect 0 0 42 12)(font "Arial" ))
+		(text "reqid[15..0]" (rect 185 235 227 247)(font "Arial" ))
+		(line (pt 248 240)(pt 232 240)(line_width 3))
+	)
+	(port
+		(pt 248 256)
+		(output)
+		(text "memrdrq" (rect 0 0 37 12)(font "Arial" ))
+		(text "memrdrq" (rect 190 251 227 263)(font "Arial" ))
+		(line (pt 248 256)(pt 232 256)(line_width 1))
+	)
+	(port
+		(pt 248 272)
+		(output)
+		(text "attrib[1..0]" (rect 0 0 37 12)(font "Arial" ))
+		(text "attrib[1..0]" (rect 190 267 227 279)(font "Arial" ))
+		(line (pt 248 272)(pt 232 272)(line_width 3))
+	)
+	(port
+		(pt 248 288)
+		(output)
+		(text "tc[2..0]" (rect 0 0 27 12)(font "Arial" ))
+		(text "tc[2..0]" (rect 200 283 227 295)(font "Arial" ))
+		(line (pt 248 288)(pt 232 288)(line_width 3))
+	)
+	(port
+		(pt 248 304)
+		(output)
+		(text "dmardfifowr" (rect 0 0 48 12)(font "Arial" ))
+		(text "dmardfifowr" (rect 179 299 227 311)(font "Arial" ))
+		(line (pt 248 304)(pt 232 304)(line_width 1))
+	)
+	(port
+		(pt 248 320)
+		(output)
+		(text "dmardfifodq[63..0]" (rect 0 0 73 12)(font "Arial" ))
+		(text "dmardfifodq[63..0]" (rect 154 315 227 327)(font "Arial" ))
+		(line (pt 248 320)(pt 232 320)(line_width 3))
+	)
+	(port
+		(pt 248 96)
+		(bidir)
+		(text "extdq[31..0]" (rect 0 0 44 12)(font "Arial" ))
+		(text "extdq[31..0]" (rect 183 91 227 103)(font "Arial" ))
+		(line (pt 248 96)(pt 232 96)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 232 352)(line_width 1))
+	)
+)

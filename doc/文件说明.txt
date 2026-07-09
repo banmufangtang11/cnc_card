@@ -1,0 +1,255 @@
+================================================================================
+                          FPGA CNC 项目文件说明
+================================================================================
+
+目录结构：
+├── par/          # Quartus 项目主目录
+├── ip/           # IP 核目录
+├── qsys/         # Qsys 系统目录
+│   ├── hardware/ # Qsys 硬件系统
+│   └── software/ # Nios II 软件项目
+├── sim/          # 仿真文件目录
+├── output/       # 编译输出目录
+└── doc/          # 文档目录
+
+
+================================================================================
+一、par/ - Quartus 项目主目录
+================================================================================
+
+该目录包含 Quartus II 项目的核心配置文件，是项目的入口。
+
+文件列表：
+├── PCIETEST.qpf  # Quartus Project File - 项目定义文件
+                  # 包含项目版本、修订名称等基本信息
+                  # 由 Quartus II 创建，通常不需要手动编辑
+
+├── PCIETEST.qsf  # Quartus Settings File - 项目设置文件
+                  # 包含编译选项、文件列表、引脚分配、时序约束等
+                  # 关键配置项：
+                  #   - PROJECT_OUTPUT_DIRECTORY: 输出目录
+                  #   - INCREMENTAL_COMPILE_DB_DIR: 增量编译数据库
+                  #   - SLD_FILE: SignalTap 配置文件
+
+├── s_rom.mif     # Memory Initialization File - ROM 初始化数据文件
+                  # **重要：这是源数据文件，不是生成文件**
+                  # 包含 100 深度、24 位宽的查找表数据
+                  # 用于 line_rom_ip 核的初始化，提供步进电机细分数据
+                  # IP 核 line_rom_ip.v 中引用此文件，删除会导致编译失败
+
+
+================================================================================
+二、ip/ - IP 核目录
+================================================================================
+
+该目录存放项目中使用的所有 IP 核，每个 IP 核独立一个子目录。
+
+2.1 ip/fifo/ - FIFO 核
+├── fifo1.*      # 标准 FIFO（VHDL）
+├── fifo3.*      # 深度 3 的 FIFO（VHDL）
+├── fifo31.*     # FIFO（Verilog）
+├── fifo33.*     # 另一种 FIFO（VHDL）
+└── queue.*      # 队列 FIFO（Verilog）
+
+2.2 ip/lpm_counter/ - 计数器核
+└── lpm_counter0.*  # LPM 计数器（VHDL）
+
+2.3 ip/pcie_hard/ - PCIe 硬核
+├── PCIe_hard.*     # PCIe 硬核主文件
+├── PCIe_hard_core.v - PCIe 硬核核心模块
+├── PCIe_hard_serdes.v - PCIe SERDES 模块
+├── PCIe_hard_examples/ - PCIe 示例代码（DMA 等）
+├── ip_compiler_for_pci_express-library/ - PCIe 库文件
+└── db/ - 数据库文件（可忽略）
+
+2.4 ip/pll/ - PLL 锁相环核
+└── altpll0.*      # 系统 PLL（VHDL）
+                   # 提供系统时钟
+
+2.5 ip/ram/ - RAM 核
+└── ram.*          # 双端口 RAM（VHDL）
+
+2.6 ip/rom/ - ROM 核
+├── line_rom_ip.v  # ROM IP 核主文件（Verilog）
+                   # 使用 s_rom.mif 作为初始化文件
+├── line_rom_ip_bb.v - ROM IP 核黑盒文件
+├── line_rom_ip_inst.v - ROM IP 核例化模板
+├── line_rom_ip.qip - Quartus IP Include File
+├── line_rom_ip.bsf - Block Symbol File（用于原理图）
+└── line_rom_ip.cmp - 元件比较文件
+
+2.7 ip/test/ - 测试用 PLL
+└── cnc_pll.*      # 测试 PLL（Verilog）
+
+IP 核文件后缀说明：
+- .qip    : Quartus IP Include File，告诉 Quartus 如何编译 IP
+- .v/.vhd : IP 核的 RTL 代码
+- .bsf    : Block Symbol File，用于 Quartus 原理图编辑器
+- .cmp    : Component Declaration File，元件声明
+- .inc    : Include File，包含参数定义
+- .ppf    : Pin-Plan File，引脚规划
+- .tcl    : TCL 脚本，用于 IP 配置
+
+
+================================================================================
+三、qsys/ - Qsys 系统目录
+================================================================================
+
+该目录包含 Qsys 生成的 Nios II 软核处理器系统。
+
+3.1 qsys/hardware/ - Qsys 硬件系统
+├── qsys.qsys      # Qsys 系统定义文件（核心源文件）
+                   # 包含系统架构、模块连接、地址映射等
+                   # 使用 Qsys 工具打开和编辑
+
+├── qsys.sopcinfo  # SOPC 信息文件
+                   # 包含系统组件信息、地址映射等
+                   # 供 Nios II BSP 生成器使用
+
+├── qsys.v         # Qsys 生成的顶层 Verilog 文件
+                   # 由 qsys.qsys 生成，不要手动编辑
+
+├── qsys.qip       # Quartus IP 包含文件
+                   # 告诉 Quartus 如何编译 Qsys 生成的文件
+
+├── qsys.regmap    # 寄存器映射文件
+                   # 描述系统中各组件的寄存器地址
+
+├── qsys.debuginfo # 调试信息文件
+
+├── qsys_generation.rpt - Qsys 生成报告
+
+├── .qsys_edit/    # Qsys 编辑器状态目录（可删除）
+│   ├── filters.xml
+│   ├── preferences.xml
+│   └── qsys.xml
+
+└── qsys/synthesis/submodules/ - Qsys 生成的子模块
+    ├── qsys_nios2.v          # Nios II 处理器核
+    ├── qsys_nios2_qsys_0.v   # Nios II 处理器实例
+    ├── qsys_onchip_memory2_0.v - 片上内存
+    ├── qsys_mm_interconnect_0.v - 内存映射互连
+    ├── qsys_jtag_uart.v      # JTAG UART 接口
+    ├── qsys_ram.v            # RAM 模块
+    ├── altera_reset_controller.v - 复位控制器
+    └── altera_avalon_sc_fifo.v - Avalon 流式 FIFO
+
+3.2 qsys/software/ - Nios II 软件项目
+├── .metadata/     # Eclipse 元数据目录（IDE 状态，可删除）
+
+├── hello/         # Nios II 应用程序
+│   ├── hello_world.c - 主程序源码
+│   ├── hello.elf     # 编译生成的可执行文件
+│   ├── hello.map     # 链接映射文件
+│   ├── hello.objdump # 反汇编文件
+│   └── Makefile      # 编译脚本
+
+└── hello_bsp/     # Nios II BSP（Board Support Package）
+    ├── HAL/inc/      # HAL 头文件
+    ├── alt_types.h   # 类型定义
+    └── sys/          # 系统级头文件
+
+
+================================================================================
+四、sim/ - 仿真文件目录
+================================================================================
+
+该目录包含 ModelSim 仿真相关文件。
+
+├── modelsim/ - ModelSim 仿真目录
+│   ├── PCIETEST.vo           # 门级网表（编译后生成）
+│   ├── PCIETEST_modelsim.xrf # ModelSim 交叉引用文件
+│   ├── cnc_run_msim_rtl_verilog.do - ModelSim 仿真脚本
+│   ├── test.vt               # 测试向量文件
+│   ├── *.sdo                 # 标准延迟输出文件（时序约束）
+│   ├── *.vo                  # 不同工艺角的门级网表
+│   ├── modelsim.ini          # ModelSim 配置文件
+│   ├── msim_transcript       # 仿真日志
+│   ├── rtl_work/             # RTL 仿真工作库（生成文件）
+│   └── verilog_libs/         # Verilog 库文件（生成文件）
+
+└── stp.stp       # SignalTap II 逻辑分析仪配置文件
+
+
+================================================================================
+五、output/ - 编译输出目录
+================================================================================
+
+该目录存放 Quartus II 编译生成的所有产物。
+
+├── PCIETEST.sof   # SRAM Object File - FPGA 配置文件（用于在线编程）
+├── PCIETEST.pof   # Programmer Object File - 配置文件（用于烧写 Flash）
+├── PCIETEST.pin   # 引脚分配报告
+├── PCIETEST.jdi   # JTAG 调试信息
+├── PCIETEST.asm.rpt - 汇编报告
+├── PCIETEST.fit.rpt - Fitter 报告（布局布线）
+├── PCIETEST.map.rpt - 映射报告
+├── PCIETEST.sta.rpt - 静态时序分析报告
+├── PCIETEST.flow.rpt - 编译流程报告
+├── PCIETEST.eda.rpt - EDA 工具报告
+├── *.summary      # 各阶段摘要报告
+├── *.smsg         # 状态消息
+└── *.done         # 编译完成标记
+
+
+================================================================================
+六、关键文件后缀说明
+================================================================================
+
+源文件：
+- .v    : Verilog 源文件
+- .vhd  : VHDL 源文件
+- .mif  : Memory Initialization File（ROM/RAM 初始化数据）
+
+项目配置：
+- .qpf  : Quartus Project File（项目定义）
+- .qsf  : Quartus Settings File（项目设置）
+- .qip  : Quartus IP Include File（IP 包含文件）
+- .qsys : Qsys 系统定义文件
+
+编译输出：
+- .sof  : SRAM Object File（FPGA 配置）
+- .pof  : Programmer Object File（Flash 配置）
+- .vo   : Verilog Output（门级网表）
+- .sdo  : Standard Delay Output（时序约束）
+- .rpt  : Report（报告文件）
+
+仿真相关：
+- .do   : ModelSim 命令脚本
+- .vt   : Verilog Testbench
+- .xrf  : Cross-Reference（交叉引用）
+
+其他：
+- .sdc  : Synopsys Design Constraints（时序约束）
+- .stp  : SignalTap II 配置
+- .qws  : Quartus Workspace State（GUI 布局状态，可删除）
+- .sopcinfo : SOPC 信息（供 BSP 使用）
+
+
+================================================================================
+七、文件分类总结
+================================================================================
+
+必须保留的源文件：
+- par/PCIETEST.qpf, PCIETEST.qsf
+- par/s_rom.mif（ROM 初始化数据）
+- ip/**/*（所有 IP 核文件）
+- qsys/hardware/qsys.qsys
+- qsys/hardware/qsys.sopcinfo
+- qsys/software/**/*.c（应用程序源码）
+
+可安全删除的文件：
+- *.qws（Quartus 工作区状态）
+- *.PLLJ_PLLSPE_INFO.txt（PLL 时序报告）
+- qsys/hardware/.qsys_edit/（Qsys 编辑器缓存）
+- qsys/software/.metadata/（Eclipse IDE 状态）
+- sim/modelsim/rtl_work/（仿真工作库）
+- sim/modelsim/verilog_libs/（仿真库）
+- output/**/*（编译输出，重新编译会生成）
+
+生成文件（由工具自动生成，不应手动编辑）：
+- ip/**/*.v, *.vhd（IP 核生成代码）
+- qsys/hardware/qsys.v（Qsys 生成代码）
+- qsys/hardware/qsys/synthesis/**/*（Qsys 子模块）
+- sim/modelsim/*.vo（门级网表）
+- output/**/*（编译输出）

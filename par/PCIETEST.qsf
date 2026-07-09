@@ -1,0 +1,303 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 13.1.0 Build 162 10/23/2013 SJ Full Version
+# Date created = 00:08:49  July 09, 2026
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		PCIETEST_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+
+# Project-Wide Assignments
+# ========================
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 11.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "12:40:37  OCTOBER 23, 2011"
+set_global_assignment -name LAST_QUARTUS_VERSION 13.1
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY ../output
+set_global_assignment -name VERILOG_FILE ../rtl/zero_sel.v
+set_global_assignment -name VHDL_FILE ../rtl/txproc.vhd
+set_global_assignment -name VERILOG_FILE ../rtl/tool_set_ctrl.v
+set_global_assignment -name VERILOG_FILE ../rtl/tool_mag_ctrl.v
+set_global_assignment -name VHDL_FILE ../rtl/test_fifo.vhd
+set_global_assignment -name VERILOG_FILE ../rtl/state_ctrl_xy.v
+set_global_assignment -name VERILOG_FILE ../rtl/state_ctrl.v
+set_global_assignment -name VERILOG_FILE ../rtl/sel_assign.v
+set_global_assignment -name VHDL_FILE ../rtl/rxproc.vhd
+set_global_assignment -name VHDL_FILE ../rtl/rsstinf.vhd
+set_global_assignment -name VERILOG_FILE ../rtl/puls_hw.v
+set_global_assignment -name VERILOG_FILE ../rtl/pctocard_count.v
+set_global_assignment -name BDF_FILE ../rtl/PCIETEST.bdf
+set_global_assignment -name BDF_FILE ../rtl/PCIECORE.bdf
+set_global_assignment -name BDF_FILE ../rtl/PCIEbot.bdf
+set_global_assignment -name VERILOG_FILE ../rtl/motor_ctrl_xy.v
+set_global_assignment -name VERILOG_FILE ../rtl/motor_ctrl.v
+set_global_assignment -name VERILOG_FILE ../rtl/key_hold.v
+set_global_assignment -name VERILOG_FILE ../rtl/key_gen.v
+set_global_assignment -name VERILOG_FILE ../rtl/jog_sel.v
+set_global_assignment -name VERILOG_FILE ../rtl/jog.v
+set_global_assignment -name VERILOG_FILE ../rtl/interpolation.v
+set_global_assignment -name VERILOG_FILE ../rtl/hand_wheel.v
+set_global_assignment -name VERILOG_FILE ../rtl/fsm_hw.v
+set_global_assignment -name VERILOG_FILE ../rtl/filter_encode.v
+set_global_assignment -name VHDL_FILE ../rtl/ext_inf.vhd
+set_global_assignment -name VERILOG_FILE ../rtl/encode_pd_a.v
+set_global_assignment -name VERILOG_FILE ../rtl/encode_pd.v
+set_global_assignment -name VERILOG_FILE ../rtl/dda.v
+set_global_assignment -name VHDL_FILE ../rtl/co_assign.vhd
+set_global_assignment -name VERILOG_FILE ../rtl/clk_2ms.v
+set_global_assignment -name VERILOG_FILE ../rtl/check.v
+set_global_assignment -name VHDL_FILE ../rtl/cfgspace.vhd
+set_global_assignment -name VERILOG_FILE ../rtl/axis_sel.v
+set_global_assignment -name VERILOG_FILE ../rtl/aux_fbac.v
+set_global_assignment -name QIP_FILE ../ip/pll/altpll0.qip
+set_global_assignment -name QIP_FILE ../ip/fifo/queue.qip
+set_global_assignment -name QIP_FILE ../ip/fifo/fifo33.qip
+set_global_assignment -name QIP_FILE ../ip/fifo/fifo31.qip
+set_global_assignment -name QIP_FILE ../ip/fifo/fifo3.qip
+set_global_assignment -name QIP_FILE ../ip/fifo/fifo1.qip
+set_global_assignment -name QIP_FILE ../ip/rom/line_rom_ip.qip
+set_global_assignment -name QIP_FILE ../ip/pcie_hard/PCIe_hard.qip
+
+# Pin & Location Assignments
+# ==========================
+set_location_assignment PIN_AA12 -to free100m
+set_location_assignment PIN_AB3 -to led[3]
+set_location_assignment PIN_W4 -to led[2]
+set_location_assignment PIN_Y4 -to led[1]
+set_location_assignment PIN_AA4 -to led[0]
+set_location_assignment PIN_K10 -to pcie_rst
+set_location_assignment PIN_M11 -to refclk
+set_location_assignment PIN_N11 -to "refclk(n)"
+set_location_assignment PIN_Y2 -to rx_in0
+set_location_assignment PIN_Y1 -to "rx_in0(n)"
+set_location_assignment PIN_T2 -to rx_in1
+set_location_assignment PIN_T1 -to "rx_in1(n)"
+set_location_assignment PIN_M2 -to rx_in2
+set_location_assignment PIN_M1 -to "rx_in2(n)"
+set_location_assignment PIN_V2 -to tx_out0
+set_location_assignment PIN_V1 -to "tx_out0(n)"
+set_location_assignment PIN_P2 -to tx_out1
+set_location_assignment PIN_P1 -to "tx_out1(n)"
+set_location_assignment PIN_K2 -to tx_out2
+set_location_assignment PIN_K1 -to "tx_out2(n)"
+set_location_assignment PIN_F2 -to tx_out3
+set_location_assignment PIN_F1 -to "tx_out3(n)"
+set_location_assignment PIN_C6 -to neg_a
+set_location_assignment PIN_C4 -to neg_x
+set_location_assignment PIN_B4 -to neg_y
+set_location_assignment PIN_D4 -to neg_z
+set_location_assignment PIN_B6 -to pos_a
+set_location_assignment PIN_C3 -to pos_x
+set_location_assignment PIN_B3 -to pos_y
+set_location_assignment PIN_C5 -to pos_z
+set_location_assignment PIN_C2 -to s1
+set_location_assignment PIN_A1 -to s2
+set_location_assignment PIN_C1 -to s3
+set_location_assignment PIN_B1 -to s4
+set_location_assignment PIN_A3 -to s5
+set_location_assignment PIN_G6 -to s6
+set_location_assignment PIN_A2 -to start
+set_location_assignment PIN_F6 -to stop
+set_location_assignment PIN_A6 -to downloaded
+set_location_assignment PIN_A7 -to fifo33_alempty
+set_location_assignment PIN_G7 -to szero
+set_location_assignment PIN_G10 -to zero_xdot
+set_location_assignment PIN_H9 -to zero_ydot
+set_location_assignment PIN_H7 -to zero_zdot
+set_location_assignment PIN_C13 -to set_ref
+set_location_assignment PIN_C12 -to renew_count
+set_location_assignment PIN_A11 -to a_a
+set_location_assignment PIN_A12 -to a_b
+set_location_assignment PIN_C9 -to x_a
+set_location_assignment PIN_B7 -to x_b
+set_location_assignment PIN_D9 -to y_a
+set_location_assignment PIN_A8 -to y_b
+set_location_assignment PIN_A10 -to z_a
+set_location_assignment PIN_B10 -to z_b
+set_location_assignment PIN_C17 -to co1
+set_location_assignment PIN_C18 -to co2
+set_location_assignment PIN_G12 -to co3
+set_location_assignment PIN_H12 -to co4
+set_location_assignment PIN_G14 -to co5
+set_location_assignment PIN_G15 -to co6
+set_location_assignment PIN_F17 -to co7
+set_location_assignment PIN_F16 -to co8
+set_location_assignment PIN_J14 -to d1
+set_location_assignment PIN_B13 -to d2
+set_location_assignment PIN_J13 -to d3
+set_location_assignment PIN_D14 -to d4
+set_location_assignment PIN_A19 -to d5
+set_location_assignment PIN_D15 -to d6
+set_location_assignment PIN_C16 -to d7
+set_location_assignment PIN_E17 -to d8
+set_location_assignment PIN_H14 -to p1
+set_location_assignment PIN_B12 -to p2
+set_location_assignment PIN_H13 -to p3
+set_location_assignment PIN_C14 -to p4
+set_location_assignment PIN_A18 -to p5
+set_location_assignment PIN_C15 -to p6
+set_location_assignment PIN_B16 -to p7
+set_location_assignment PIN_D17 -to p8
+set_location_assignment PIN_M22 -to rst_fifo
+set_location_assignment PIN_C10 -to hw_Ain
+set_location_assignment PIN_C11 -to hw_Bin
+set_location_assignment PIN_K12 -to hw_HA
+set_location_assignment PIN_A16 -to hw_HX
+set_location_assignment PIN_A17 -to hw_HY
+set_location_assignment PIN_J12 -to hw_HZ
+set_location_assignment PIN_B15 -to hw_valid
+set_location_assignment PIN_A13 -to hw_X1
+set_location_assignment PIN_A14 -to hw_X10
+set_location_assignment PIN_A15 -to hw_X100
+set_location_assignment PIN_D5 -to m_cool
+set_location_assignment PIN_E5 -to m_cw
+set_location_assignment PIN_D6 -to m_atcw
+set_location_assignment PIN_A4 -to mag_bw
+set_location_assignment PIN_A5 -to mag_bwOK
+set_location_assignment PIN_E6 -to mag_count
+set_location_assignment PIN_G8 -to mag_fw
+set_location_assignment PIN_H8 -to mag_fwOK
+set_location_assignment PIN_C7 -to mag_on
+set_location_assignment PIN_C8 -to tool_loose
+set_location_assignment PIN_D8 -to tool_looseOK
+set_location_assignment PIN_D7 -to toolsetter_on
+set_location_assignment PIN_F8 -to toolsetter_out
+set_location_assignment PIN_E8 -to toolsetter_trigger
+set_location_assignment PIN_H2 -to rx_in3
+set_location_assignment PIN_H1 -to "rx_in3(n)"
+
+# Classic Timing Assignments
+# ==========================
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP "-40"
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 100
+set_global_assignment -name TIMEQUEST_MULTICORNER_ANALYSIS ON
+
+# Analysis & Synthesis Assignments
+# ================================
+set_global_assignment -name FAMILY "Cyclone IV GX"
+set_global_assignment -name DEVICE_FILTER_PACKAGE FBGA
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 484
+
+# Fitter Assignments
+# ==================
+set_global_assignment -name DEVICE EP4CGX75CF23I7
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_global_assignment -name FORCE_CONFIGURATION_VCCIO ON
+set_global_assignment -name ACTIVE_SERIAL_CLOCK FREQ_20MHZ
+set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_WEAK_PULLUP "AS INPUT TRI-STATED"
+
+# EDA Netlist Writer Assignments
+# ==============================
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+
+# Assembler Assignments
+# =====================
+set_global_assignment -name RELEASE_CLEARS_BEFORE_TRI_STATES ON
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name CYCLONEIII_CONFIGURATION_DEVICE EPCS128
+
+# SignalTap II Assignments
+# ========================
+set_global_assignment -name ENABLE_SIGNALTAP OFF
+set_global_assignment -name USE_SIGNALTAP_FILE ../test/stp.stp
+
+# Power Estimation Assignments
+# ============================
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+
+# Advanced I/O Timing Assignments
+# ===============================
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
+
+# start EDA_TOOL_SETTINGS(eda_simulation)
+# ---------------------------------------
+
+	# EDA Netlist Writer Assignments
+	# ==============================
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+
+# end EDA_TOOL_SETTINGS(eda_simulation)
+# -------------------------------------
+
+# start AUTO_INSERT_SLD_NODE_ENTITY(auto_signaltap_0)
+# ---------------------------------------------------
+
+	# SignalTap II Assignments
+	# ========================
+
+# end AUTO_INSERT_SLD_NODE_ENTITY(auto_signaltap_0)
+# -------------------------------------------------
+
+# ----------------------
+# start ENTITY(PCIETEST)
+
+	# Fitter Assignments
+	# ==================
+set_instance_assignment -name IO_STANDARD "1.8 V" -to led[3]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to led[2]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to led[1]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to led[0]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to pcie_rst
+set_instance_assignment -name IO_STANDARD HCSL -to refclk
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to rx_in0
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to rx_in1
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to rx_in2
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to tx_out0
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to tx_out1
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to tx_out2
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to tx_out3
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to rx_in3
+
+	# start DESIGN_PARTITION(Top)
+	# ---------------------------
+
+		# Incremental Compilation Assignments
+		# ===================================
+set_global_assignment -name PARTITION_NETLIST_TYPE POST_FIT -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+
+	# end DESIGN_PARTITION(Top)
+	# -------------------------
+
+# end ENTITY(PCIETEST)
+# --------------------
+set_global_assignment -name TOP_LEVEL_ENTITY PCIETEST
+set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR ../test/simulation/modelsim -section_id eda_simulation
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

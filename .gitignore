@@ -1,0 +1,39 @@
+
+# Quartus II 编译输出
+output/
+output_files/
+**/db/
+**/incremental_db/
+**/greybox_tmp/
+
+# Quartus II 自动生成文件
+*.ddb
+*.qws
+
+# Quartus II 配置文件
+
+# Quartus II Qsys 编辑状态
+**/.qsys_edit/
+
+# Nios II 软件项目
+**/.metadata/
+**/*_bsp/obj/
+
+# Modelsim 仿真文件
+**/modelsim/
+
+# 波形文件
+
+# 备份和临时文件
+
+# Qsys 生成的综合文件（保留 qsys.qsys）
+
+# IP 核生成文件
+
+# 增量编译相关
+*.pti_db_list.ddb
+*.tis_db_list.ddb
+
+# 编译日志和错误
+qmegawiz_errors_log.txt
+*PLLJ_PLLSPE_INFO.txt
