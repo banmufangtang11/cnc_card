@@ -43,49 +43,6 @@ set_global_assignment -name ORIGINAL_QUARTUS_VERSION 11.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "12:40:37  OCTOBER 23, 2011"
 set_global_assignment -name LAST_QUARTUS_VERSION 13.1
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY ../output
-set_global_assignment -name VERILOG_FILE ../rtl/zero_sel.v
-set_global_assignment -name VHDL_FILE ../rtl/txproc.vhd
-set_global_assignment -name VERILOG_FILE ../rtl/tool_set_ctrl.v
-set_global_assignment -name VERILOG_FILE ../rtl/tool_mag_ctrl.v
-set_global_assignment -name VHDL_FILE ../rtl/test_fifo.vhd
-set_global_assignment -name VERILOG_FILE ../rtl/state_ctrl_xy.v
-set_global_assignment -name VERILOG_FILE ../rtl/state_ctrl.v
-set_global_assignment -name VERILOG_FILE ../rtl/sel_assign.v
-set_global_assignment -name VHDL_FILE ../rtl/rxproc.vhd
-set_global_assignment -name VHDL_FILE ../rtl/rsstinf.vhd
-set_global_assignment -name VERILOG_FILE ../rtl/puls_hw.v
-set_global_assignment -name VERILOG_FILE ../rtl/pctocard_count.v
-set_global_assignment -name BDF_FILE ../rtl/PCIETEST.bdf
-set_global_assignment -name BDF_FILE ../rtl/PCIECORE.bdf
-set_global_assignment -name BDF_FILE ../rtl/PCIEbot.bdf
-set_global_assignment -name VERILOG_FILE ../rtl/motor_ctrl_xy.v
-set_global_assignment -name VERILOG_FILE ../rtl/motor_ctrl.v
-set_global_assignment -name VERILOG_FILE ../rtl/key_hold.v
-set_global_assignment -name VERILOG_FILE ../rtl/key_gen.v
-set_global_assignment -name VERILOG_FILE ../rtl/jog_sel.v
-set_global_assignment -name VERILOG_FILE ../rtl/jog.v
-set_global_assignment -name VERILOG_FILE ../rtl/interpolation.v
-set_global_assignment -name VERILOG_FILE ../rtl/hand_wheel.v
-set_global_assignment -name VERILOG_FILE ../rtl/fsm_hw.v
-set_global_assignment -name VERILOG_FILE ../rtl/filter_encode.v
-set_global_assignment -name VHDL_FILE ../rtl/ext_inf.vhd
-set_global_assignment -name VERILOG_FILE ../rtl/encode_pd_a.v
-set_global_assignment -name VERILOG_FILE ../rtl/encode_pd.v
-set_global_assignment -name VERILOG_FILE ../rtl/dda.v
-set_global_assignment -name VHDL_FILE ../rtl/co_assign.vhd
-set_global_assignment -name VERILOG_FILE ../rtl/clk_2ms.v
-set_global_assignment -name VERILOG_FILE ../rtl/check.v
-set_global_assignment -name VHDL_FILE ../rtl/cfgspace.vhd
-set_global_assignment -name VERILOG_FILE ../rtl/axis_sel.v
-set_global_assignment -name VERILOG_FILE ../rtl/aux_fbac.v
-set_global_assignment -name QIP_FILE ../ip/pll/altpll0.qip
-set_global_assignment -name QIP_FILE ../ip/fifo/queue.qip
-set_global_assignment -name QIP_FILE ../ip/fifo/fifo33.qip
-set_global_assignment -name QIP_FILE ../ip/fifo/fifo31.qip
-set_global_assignment -name QIP_FILE ../ip/fifo/fifo3.qip
-set_global_assignment -name QIP_FILE ../ip/fifo/fifo1.qip
-set_global_assignment -name QIP_FILE ../ip/rom/line_rom_ip.qip
-set_global_assignment -name QIP_FILE ../ip/pcie_hard/PCIe_hard.qip
 
 # Pin & Location Assignments
 # ==========================
@@ -300,4 +257,47 @@ set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name TOP_LEVEL_ENTITY PCIETEST
 set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR ../test/simulation/modelsim -section_id eda_simulation
 set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name VERILOG_FILE ../rtl/co_assign.v
+set_global_assignment -name VERILOG_FILE ../rtl/ext_inf.v
+set_global_assignment -name VERILOG_FILE ../rtl/test_fifo.v
+set_global_assignment -name VERILOG_FILE ../rtl/txproc.v
+set_global_assignment -name VERILOG_FILE ../rtl/rxproc.v
+set_global_assignment -name VERILOG_FILE ../rtl/rsstinf.v
+set_global_assignment -name VERILOG_FILE ../rtl/cfgspace.v
+set_global_assignment -name VERILOG_FILE ../rtl/zero_sel.v
+set_global_assignment -name VERILOG_FILE ../rtl/tool_set_ctrl.v
+set_global_assignment -name VERILOG_FILE ../rtl/tool_mag_ctrl.v
+set_global_assignment -name VERILOG_FILE ../rtl/state_ctrl_xy.v
+set_global_assignment -name VERILOG_FILE ../rtl/state_ctrl.v
+set_global_assignment -name VERILOG_FILE ../rtl/sel_assign.v
+set_global_assignment -name VERILOG_FILE ../rtl/puls_hw.v
+set_global_assignment -name VERILOG_FILE ../rtl/pctocard_count.v
+set_global_assignment -name BDF_FILE ../rtl/PCIETEST.bdf
+set_global_assignment -name BDF_FILE ../rtl/PCIECORE.bdf
+set_global_assignment -name BDF_FILE ../rtl/PCIEbot.bdf
+set_global_assignment -name VERILOG_FILE ../rtl/motor_ctrl_xy.v
+set_global_assignment -name VERILOG_FILE ../rtl/motor_ctrl.v
+set_global_assignment -name VERILOG_FILE ../rtl/key_hold.v
+set_global_assignment -name VERILOG_FILE ../rtl/key_gen.v
+set_global_assignment -name VERILOG_FILE ../rtl/jog_sel.v
+set_global_assignment -name VERILOG_FILE ../rtl/jog.v
+set_global_assignment -name VERILOG_FILE ../rtl/interpolation.v
+set_global_assignment -name VERILOG_FILE ../rtl/hand_wheel.v
+set_global_assignment -name VERILOG_FILE ../rtl/fsm_hw.v
+set_global_assignment -name VERILOG_FILE ../rtl/filter_encode.v
+set_global_assignment -name VERILOG_FILE ../rtl/encode_pd_a.v
+set_global_assignment -name VERILOG_FILE ../rtl/encode_pd.v
+set_global_assignment -name VERILOG_FILE ../rtl/dda.v
+set_global_assignment -name VERILOG_FILE ../rtl/clk_2ms.v
+set_global_assignment -name VERILOG_FILE ../rtl/check.v
+set_global_assignment -name VERILOG_FILE ../rtl/axis_sel.v
+set_global_assignment -name VERILOG_FILE ../rtl/aux_fbac.v
+set_global_assignment -name QIP_FILE ../ip/pll/altpll0.qip
+set_global_assignment -name QIP_FILE ../ip/fifo/queue.qip
+set_global_assignment -name QIP_FILE ../ip/fifo/fifo33.qip
+set_global_assignment -name QIP_FILE ../ip/fifo/fifo31.qip
+set_global_assignment -name QIP_FILE ../ip/fifo/fifo3.qip
+set_global_assignment -name QIP_FILE ../ip/fifo/fifo1.qip
+set_global_assignment -name QIP_FILE ../ip/rom/line_rom_ip.qip
+set_global_assignment -name QIP_FILE ../ip/pcie_hard/PCIe_hard.qip
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
