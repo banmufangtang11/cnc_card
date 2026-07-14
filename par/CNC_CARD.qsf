@@ -1,17 +1,17 @@
 # -------------------------------------------------------------------------- #
 #
 # Copyright (C) 1991-2013 Altera Corporation
-# Your use of Altera Corporation's design tools, logic functions 
-# and other software and tools, and its AMPP partner logic 
-# functions, and any output files from any of the foregoing 
-# (including device programming or simulation files), and any 
-# associated documentation or information are expressly subject 
-# to the terms and conditions of the Altera Program License 
-# Subscription Agreement, Altera MegaCore Function License 
-# Agreement, or other applicable license agreement, including, 
-# without limitation, that your use is for the sole purpose of 
-# programming logic devices manufactured by Altera and sold by 
-# Altera or its authorized distributors.  Please refer to the 
+# Your use of Altera Corporation's design tools, logic functions
+# and other software and tools, and its AMPP partner logic
+# functions, and any output files from any of the foregoing
+# (including device programming or simulation files), and any
+# associated documentation or information are expressly subject
+# to the terms and conditions of the Altera Program License
+# Subscription Agreement, Altera MegaCore Function License
+# Agreement, or other applicable license agreement, including,
+# without limitation, that your use is for the sole purpose of
+# programming logic devices manufactured by Altera and sold by
+# Altera or its authorized distributors.  Please refer to the
 # applicable agreement for further details.
 #
 # -------------------------------------------------------------------------- #
@@ -25,7 +25,7 @@
 # Notes:
 #
 # 1) The default values for assignments are stored in the file:
-#		PCIETEST_assignment_defaults.qdf
+#		CNC_CARD_assignment_defaults.qdf
 #    If this file doesn't exist, see file:
 #		assignment_defaults.qdf
 #
@@ -221,7 +221,7 @@ set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda
 # -------------------------------------------------
 
 # ----------------------
-# start ENTITY(PCIETEST)
+# start ENTITY(CNC_CARD)
 
 	# Fitter Assignments
 	# ==================
@@ -252,11 +252,14 @@ set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 	# end DESIGN_PARTITION(Top)
 	# -------------------------
 
-# end ENTITY(PCIETEST)
+# end ENTITY(CNC_CARD)
 # --------------------
-set_global_assignment -name TOP_LEVEL_ENTITY PCIETEST
+set_global_assignment -name TOP_LEVEL_ENTITY CNC_CARD
 set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR ../test/simulation/modelsim -section_id eda_simulation
 set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name BDF_FILE ../rtl/CNC_CARD.bdf
+set_global_assignment -name BDF_FILE ../rtl/PCIEbot.bdf
+set_global_assignment -name BDF_FILE ../rtl/PCIECORE.bdf
 set_global_assignment -name VERILOG_FILE ../rtl/co_assign.v
 set_global_assignment -name VERILOG_FILE ../rtl/ext_inf.v
 set_global_assignment -name VERILOG_FILE ../rtl/test_fifo.v
@@ -272,9 +275,6 @@ set_global_assignment -name VERILOG_FILE ../rtl/state_ctrl.v
 set_global_assignment -name VERILOG_FILE ../rtl/sel_assign.v
 set_global_assignment -name VERILOG_FILE ../rtl/puls_hw.v
 set_global_assignment -name VERILOG_FILE ../rtl/pctocard_count.v
-set_global_assignment -name BDF_FILE ../rtl/PCIETEST.bdf
-set_global_assignment -name BDF_FILE ../rtl/PCIECORE.bdf
-set_global_assignment -name BDF_FILE ../rtl/PCIEbot.bdf
 set_global_assignment -name VERILOG_FILE ../rtl/motor_ctrl_xy.v
 set_global_assignment -name VERILOG_FILE ../rtl/motor_ctrl.v
 set_global_assignment -name VERILOG_FILE ../rtl/key_hold.v

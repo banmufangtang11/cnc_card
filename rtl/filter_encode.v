@@ -1,89 +1,64 @@
+`timescale 1ns / 1ps
+
+// 编码器信号滤波模块
+// 对编码器A/B相信号进行去抖滤波，消除噪声干扰
+
 module filter_encode(
-	 // system signals
-	input  clk	   ,
-	input  rst_n	,
-	input	 puls,
-	// others
-	output reg filter
-
-
+    input         clk,     // 时钟信号
+    input         rst_n,   // 复位信号（低有效）
+    input         puls,    // 原始脉冲输入
+    output reg    filter   // 滤波后脉冲输出
 );
 
-//================================================================\
-// ========= Define Parameter and Internal Signals ==========
-//================================================================/
-//localparam filter_cnt_end = 'd8;
-localparam filter_cnt_end = 'd20;
-//localparam bps_cnt_end = 'd2;
+localparam FILTER_CNT_END = 'd20;
+
 reg [7:0] filter_cnt;
+reg       puls_t, puls_tt;
+reg       flag, flag_cnt;
 
-reg puls_t;		//延迟一个时钟
-reg puls_tt;	//延迟两个时钟
+wire puls_neg = (puls_tt & !puls_t);
+wire puls_pos = (!puls_tt & puls_t);
 
-reg flag;		
-reg flag_cnt;
-
-wire puls_neg;	//脉冲上升沿
-wire puls_pos;
-
-//================================================================\
-// ****************     Main    Code    **************
-//================================================================/
-assign puls_neg = (puls_tt & !puls_t);	//上升沿产生的脉冲
-assign puls_pos = (!puls_tt & puls_t);	//下降沿产生的脉冲
-
-always@(posedge clk or negedge rst_n )begin
-		if(!rst_n)
-			begin
-			puls_t<=1'b1;
-			puls_tt<=1'b1;
-			end
-		else 
-			begin
-			puls_t<=puls;
-			puls_tt<=puls_t;
-			end
+always @(posedge clk or negedge rst_n) begin
+    if (!rst_n) begin
+        puls_t <= 1'b1;
+        puls_tt <= 1'b1;
+    end else begin
+        puls_t <= puls;
+        puls_tt <= puls_t;
+    end
 end
 
-always@(posedge clk or negedge rst_n )begin
-		if(!rst_n)
-			filter_cnt	<= 'd0;
-		else if(filter_cnt==filter_cnt_end || puls_neg ==1 || puls_pos==1)
-			filter_cnt	<=	'd0;	//用来脉冲后计时
-		else if(flag_cnt==1)		//计时使能
-			filter_cnt	<=	filter_cnt	+	1'b1;
-		else
-			filter_cnt	<=	filter_cnt;
+always @(posedge clk or negedge rst_n) begin
+    if (!rst_n) begin
+        filter_cnt <= 'd0;
+    end else if (filter_cnt == FILTER_CNT_END || puls_neg || puls_pos) begin
+        filter_cnt <= 'd0;
+    end else if (flag_cnt) begin
+        filter_cnt <= filter_cnt + 1'b1;
+    end
 end
 
-always@(posedge clk or negedge rst_n )begin
-		if(!rst_n)
-			flag_cnt	<= 'd0;
-		else if(filter_cnt==filter_cnt_end)
-			flag_cnt	<= 'd0;
-		else if(puls_neg ==1 || puls_pos==1)
-			flag_cnt	<= 'd1;
-		else
-			flag_cnt	<= flag_cnt;
+always @(posedge clk or negedge rst_n) begin
+    if (!rst_n) begin
+        flag_cnt <= 'd0;
+    end else if (filter_cnt == FILTER_CNT_END) begin
+        flag_cnt <= 'd0;
+    end else if (puls_neg || puls_pos) begin
+        flag_cnt <= 'd1;
+    end
 end
 
-always@(*)begin
-		if(!rst_n)
-			flag	<= 'd1;
-		else if(filter_cnt==filter_cnt_end)
-			flag 	<=	'd1;	
-		else
-			flag 	<=	'd0;
+always @(*) begin
+    flag = (!rst_n) ? 'd1 : (filter_cnt == FILTER_CNT_END) ? 'd1 : 'd0;
 end
 
-always@(posedge clk or negedge rst_n )begin
-		if(!rst_n)
-			filter	<= 'd0;
-		else if(flag==1)
-			filter	<=puls_tt;
-		else
-			filter <= filter;
+always @(posedge clk or negedge rst_n) begin
+    if (!rst_n) begin
+        filter <= 'd0;
+    end else if (flag) begin
+        filter <= puls_tt;
+    end
 end
 
 endmodule
-

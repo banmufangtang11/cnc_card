@@ -20,11 +20,11 @@
 该目录包含 Quartus II 项目的核心配置文件，是项目的入口。
 
 文件列表：
-├── PCIETEST.qpf  # Quartus Project File - 项目定义文件
+├── CNC_CARD.qpf  # Quartus Project File - 项目定义文件
                   # 包含项目版本、修订名称等基本信息
                   # 由 Quartus II 创建，通常不需要手动编辑
 
-├── PCIETEST.qsf  # Quartus Settings File - 项目设置文件
+├── CNC_CARD.qsf  # Quartus Settings File - 项目设置文件
                   # 包含编译选项、文件列表、引脚分配、时序约束等
                   # 关键配置项：
                   #   - PROJECT_OUTPUT_DIRECTORY: 输出目录
@@ -157,8 +157,8 @@ IP 核文件后缀说明：
 该目录包含 ModelSim 仿真相关文件。
 
 ├── modelsim/ - ModelSim 仿真目录
-│   ├── PCIETEST.vo           # 门级网表（编译后生成）
-│   ├── PCIETEST_modelsim.xrf # ModelSim 交叉引用文件
+│   ├── CNC_CARD.vo           # 门级网表（编译后生成）
+│   ├── CNC_CARD_modelsim.xrf # ModelSim 交叉引用文件
 │   ├── cnc_run_msim_rtl_verilog.do - ModelSim 仿真脚本
 │   ├── test.vt               # 测试向量文件
 │   ├── *.sdo                 # 标准延迟输出文件（时序约束）
@@ -177,16 +177,16 @@ IP 核文件后缀说明：
 
 该目录存放 Quartus II 编译生成的所有产物。
 
-├── PCIETEST.sof   # SRAM Object File - FPGA 配置文件（用于在线编程）
-├── PCIETEST.pof   # Programmer Object File - 配置文件（用于烧写 Flash）
-├── PCIETEST.pin   # 引脚分配报告
-├── PCIETEST.jdi   # JTAG 调试信息
-├── PCIETEST.asm.rpt - 汇编报告
-├── PCIETEST.fit.rpt - Fitter 报告（布局布线）
-├── PCIETEST.map.rpt - 映射报告
-├── PCIETEST.sta.rpt - 静态时序分析报告
-├── PCIETEST.flow.rpt - 编译流程报告
-├── PCIETEST.eda.rpt - EDA 工具报告
+├── CNC_CARD.sof   # SRAM Object File - FPGA 配置文件（用于在线编程）
+├── CNC_CARD.pof   # Programmer Object File - 配置文件（用于烧写 Flash）
+├── CNC_CARD.pin   # 引脚分配报告
+├── CNC_CARD.jdi   # JTAG 调试信息
+├── CNC_CARD.asm.rpt - 汇编报告
+├── CNC_CARD.fit.rpt - Fitter 报告（布局布线）
+├── CNC_CARD.map.rpt - 映射报告
+├── CNC_CARD.sta.rpt - 静态时序分析报告
+├── CNC_CARD.flow.rpt - 编译流程报告
+├── CNC_CARD.eda.rpt - EDA 工具报告
 ├── *.summary      # 各阶段摘要报告
 ├── *.smsg         # 状态消息
 └── *.done         # 编译完成标记
@@ -231,7 +231,7 @@ IP 核文件后缀说明：
 ================================================================================
 
 必须保留的源文件：
-- par/PCIETEST.qpf, PCIETEST.qsf
+- par/CNC_CARD.qpf, CNC_CARD.qsf
 - par/s_rom.mif（ROM 初始化数据）
 - ip/**/*（所有 IP 核文件）
 - qsys/hardware/qsys.qsys
