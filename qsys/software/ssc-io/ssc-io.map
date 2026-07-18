@@ -1,0 +1,768 @@
+Archive member included because of file (symbol)
+
+D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_main.o)
+                              D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp//obj/HAL/src/crt0.o (alt_main)
+D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_sys_init.o)
+                              D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_main.o) (alt_irq_init)
+D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+                              D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_sys_init.o) (altera_avalon_jtag_uart_read_fd)
+D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+                              D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o) (altera_avalon_jtag_uart_read)
+D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                              D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o) (altera_avalon_jtag_uart_write)
+D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_avalon_spi.o)
+                              obj/default/main.o (alt_avalon_spi_command)
+D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_close.o)
+                              D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_main.o) (close)
+D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_dev.o)
+                              D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_sys_init.o) (alt_dev_list)
+D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+                              D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_sys_init.o) (alt_dev_llist_insert)
+D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_errno.o)
+                              D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_close.o) (alt_errno)
+D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_exit.o)
+                              D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_main.o) (_exit)
+D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_io_redirect.o)
+                              D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_main.o) (alt_io_redirect)
+D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_open.o)
+                              D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_io_redirect.o) (open)
+D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_release_fd.o)
+                              D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_close.o) (alt_release_fd)
+D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+                              D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_sys_init.o) (altera_nios2_qsys_irq_init)
+D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_find_dev.o)
+                              D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_open.o) (alt_find_dev)
+D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_find_file.o)
+                              D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_open.o) (alt_find_file)
+D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_get_fd.o)
+                              D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_open.o) (alt_get_fd)
+d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+                              D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_close.o) (errno)
+d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+                              D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_find_dev.o) (memcmp)
+d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+                              D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_find_dev.o) (strlen)
+
+Allocating common symbols
+Common symbol       size              file
+
+b3BufferMode        0x1               obj/default/main.o
+m_maxsyncman        0x1               obj/default/main.o
+aMbOutputData       0x40              obj/default/main.o
+m_mbxrunning        0x1               obj/default/main.o
+m_pdooutrun         0x1               obj/default/main.o
+pd_counter          0x4               obj/default/main.o
+pPdOutputData       0x4               obj/default/main.o
+nAlStatus           0x1               obj/default/main.o
+nPdOutputSize       0x2               obj/default/main.o
+errno               0x4               d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+mb_counter          0x4               obj/default/main.o
+nEscAddrOutputData  0x2               obj/default/main.o
+u16EscAddrReceiveMbx
+                    0x2               obj/default/main.o
+pMbxReadData        0x4               obj/default/main.o
+pPdInputData        0x4               obj/default/main.o
+u16SendMbxSize      0x2               obj/default/main.o
+nPdInputSize        0x2               obj/default/main.o
+aPdOutputData       0x40              obj/default/main.o
+m_pdoinrun          0x1               obj/default/main.o
+u16EscAddrSendMbx   0x2               obj/default/main.o
+EscAlEvent          0x4               obj/default/main.o
+aMbInputData        0x40              obj/default/main.o
+nAlStatusFailed     0x1               obj/default/main.o
+u16ReceiveMbxSize   0x2               obj/default/main.o
+pMbxWriteData       0x4               obj/default/main.o
+bEcatOutputUpdateRunning
+                    0x1               obj/default/main.o
+bEscIntEnabled      0x1               obj/default/main.o
+nAlControl          0x1               obj/default/main.o
+pEsc                0x4               obj/default/main.o
+aPdInputData        0x40              obj/default/main.o
+bWdTrigger          0x1               obj/default/main.o
+nAlStatusCode       0x2               obj/default/main.o
+nEscAddrInputData   0x2               obj/default/main.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+onchip_ram_BEFORE_EXCEPTION 0x00008000         0x00000020
+onchip_ram       0x00008020         0x000077e0
+reset            0x00011000         0x00000020
+epcs_flash       0x00011020         0x000007e0
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp//obj/HAL/src/crt0.o
+LOAD obj/default/main.o
+LOAD d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libstdc++.a
+LOAD d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libm.a
+LOAD d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3\libgcc.a
+START GROUP
+LOAD d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a
+LOAD d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3\libgcc.a
+LOAD D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a
+END GROUP
+LOAD d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3\libgcc.a
+                0x00008000                __alt_mem_onchip_ram = 0x8000
+                0x00011000                __alt_mem_epcs_flash = 0x11000
+
+.entry          0x00011000        0x0
+ *(.entry)
+ .entry         0x00011000        0x0 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp//obj/HAL/src/crt0.o
+                0x00011000                __reset
+
+.exceptions     0x00008020        0x0
+                0x00008020                PROVIDE (__ram_exceptions_start, ABSOLUTE (.))
+                0x00008020                . = ALIGN (0x20)
+ *(.irq)
+ *(.exceptions.entry.label)
+ *(.exceptions.entry.user)
+ *(.exceptions.entry.ecc_fatal)
+ *(.exceptions.entry)
+ *(.exceptions.irqtest.user)
+ *(.exceptions.irqtest)
+ *(.exceptions.irqhandler.user)
+ *(.exceptions.irqhandler)
+ *(.exceptions.irqreturn.user)
+ *(.exceptions.irqreturn)
+ *(.exceptions.notirq.label)
+ *(.exceptions.notirq.user)
+ *(.exceptions.notirq)
+ *(.exceptions.soft.user)
+ *(.exceptions.soft)
+ *(.exceptions.unknown.user)
+ *(.exceptions.unknown)
+ *(.exceptions.exit.label)
+ *(.exceptions.exit.user)
+ *(.exceptions.exit)
+ *(.exceptions)
+                0x00008020                PROVIDE (__ram_exceptions_end, ABSOLUTE (.))
+                0x00008020                PROVIDE (__flash_exceptions_start, LOADADDR (.exceptions))
+
+.text           0x00008020     0x262c
+                0x00008020                PROVIDE (stext, ABSOLUTE (.))
+ *(.interp)
+ *(.hash)
+ *(.dynsym)
+ *(.dynstr)
+ *(.gnu.version)
+ *(.gnu.version_d)
+ *(.gnu.version_r)
+ *(.rel.init)
+ *(.rela.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rel.fini)
+ *(.rela.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rela.ctors)
+ *(.rel.dtors)
+ *(.rela.dtors)
+ *(.rel.got)
+ *(.rela.got)
+ *(.rel.sdata .rel.sdata.* .rel.gnu.linkonce.s.*)
+ *(.rela.sdata .rela.sdata.* .rela.gnu.linkonce.s.*)
+ *(.rel.sbss .rel.sbss.* .rel.gnu.linkonce.sb.*)
+ *(.rela.sbss .rela.sbss.* .rela.gnu.linkonce.sb.*)
+ *(.rel.sdata2 .rel.sdata2.* .rel.gnu.linkonce.s2.*)
+ *(.rela.sdata2 .rela.sdata2.* .rela.gnu.linkonce.s2.*)
+ *(.rel.sbss2 .rel.sbss2.* .rel.gnu.linkonce.sb2.*)
+ *(.rela.sbss2 .rela.sbss2.* .rela.gnu.linkonce.sb2.*)
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ *(.rel.plt)
+ *(.rela.plt)
+ *(.rel.dyn)
+ *(.init)
+ *(.plt)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x00008020       0x48 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp//obj/HAL/src/crt0.o
+                0x00008020                _start
+ .text          0x00008068     0x1720 obj/default/main.o
+                0x00008068                spi_tx_rx_8
+                0x00008170                spi_read_8
+                0x00008238                spi_read_16
+                0x0000832c                spi_read_32
+                0x0000846c                spi_write_8
+                0x00008544                spi_write_16
+                0x0000865c                readoutputdata
+                0x00008740                writeinputdata
+                0x00008828                HW_init
+                0x00008844                get_sm
+                0x000089a0                set_intmask
+                0x000089f8                reset_intmask
+                0x00008a50                enable_syncmanchannel
+                0x00008ad0                disable_syncmanchannel
+                0x00008b4c                SetAlStatus
+                0x00008bac                checksmsettings
+                0x00008bd4                mbx_startmailboxhandler
+                0x00008c94                pdo_startinputhandler
+                0x00008e40                pdo_startoutputhandler
+                0x00008ec4                mbx_stopmailboxhandler
+                0x00008efc                pdo_stopinputhandler
+                0x00008f44                pdo_stopoutputhandler
+                0x00008f68                al_statemachine
+                0x00009470                rw_test
+                0x0000951c                ECAT_init
+                0x000095a0                dda_out
+                0x000095d0                free_run
+                0x00009630                pdi_irq
+                0x0000969c                mb_process
+                0x000096b8                al_event
+                0x0000973c                main
+ .text          0x00009788       0x68 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_main.o)
+                0x00009788                alt_main
+ .text          0x000097f0       0xa8 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_sys_init.o)
+                0x00009828                alt_irq_init
+                0x0000985c                alt_sys_init
+ .text          0x00009898       0xc0 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+                0x00009898                altera_avalon_jtag_uart_read_fd
+                0x000098f8                altera_avalon_jtag_uart_write_fd
+ .text          0x00009958       0xf4 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+                0x00009958                altera_avalon_jtag_uart_read
+ .text          0x00009a4c       0x98 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                0x00009a4c                altera_avalon_jtag_uart_write
+ .text          0x00009ae4      0x208 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_avalon_spi.o)
+                0x00009ae4                alt_avalon_spi_command
+ .text          0x00009cec      0x118 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_close.o)
+                0x00009d3c                close
+ .text          0x00009e04       0x2c D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_dev.o)
+ .text          0x00009e30       0xf0 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+                0x00009e80                alt_dev_llist_insert
+ .text          0x00009f20        0x0 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_errno.o)
+ .text          0x00009f20       0x3c D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_exit.o)
+                0x00009f20                _exit
+ .text          0x00009f5c      0x138 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_io_redirect.o)
+                0x0000a01c                alt_io_redirect
+ .text          0x0000a094      0x270 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_open.o)
+                0x0000a1b0                open
+ .text          0x0000a304       0x60 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_release_fd.o)
+                0x0000a304                alt_release_fd
+ .text          0x0000a364       0x20 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+                0x0000a364                altera_nios2_qsys_irq_init
+ .text          0x0000a384       0x90 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_find_dev.o)
+                0x0000a384                alt_find_dev
+ .text          0x0000a414      0x114 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_find_file.o)
+                0x0000a414                alt_find_file
+ .text          0x0000a528       0xb4 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_get_fd.o)
+                0x0000a528                alt_get_fd
+ .text          0x0000a5dc        0x0 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+ .text          0x0000a5dc       0x48 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+                0x0000a5dc                memcmp
+ .text          0x0000a624       0x28 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+                0x0000a624                strlen
+ *(.gnu.warning.*)
+ *(.fini)
+                0x0000a64c                PROVIDE (__etext, ABSOLUTE (.))
+                0x0000a64c                PROVIDE (_etext, ABSOLUTE (.))
+                0x0000a64c                PROVIDE (etext, ABSOLUTE (.))
+ *(.eh_frame_hdr)
+                0x0000a64c                . = ALIGN (0x4)
+                0x0000a64c                PROVIDE (__preinit_array_start, ABSOLUTE (.))
+ *(.preinit_array)
+                0x0000a64c                PROVIDE (__preinit_array_end, ABSOLUTE (.))
+                0x0000a64c                PROVIDE (__init_array_start, ABSOLUTE (.))
+ *(.init_array)
+                0x0000a64c                PROVIDE (__init_array_end, ABSOLUTE (.))
+                0x0000a64c                PROVIDE (__fini_array_start, ABSOLUTE (.))
+ *(.fini_array)
+                0x0000a64c                PROVIDE (__fini_array_end, ABSOLUTE (.))
+ *(.eh_frame)
+ *(.gcc_except_table .gcc_except_table.*)
+ *(.dynamic)
+                0x0000a64c                PROVIDE (__CTOR_LIST__, ABSOLUTE (.))
+ *(.ctors)
+ *(SORT(.ctors.*))
+                0x0000a64c                PROVIDE (__CTOR_END__, ABSOLUTE (.))
+                0x0000a64c                PROVIDE (__DTOR_LIST__, ABSOLUTE (.))
+ *(.dtors)
+ *(SORT(.dtors.*))
+                0x0000a64c                PROVIDE (__DTOR_END__, ABSOLUTE (.))
+ *(.jcr)
+                0x0000a64c                . = ALIGN (0x4)
+
+.rodata         0x0000a64c       0x2c
+                0x0000a64c                PROVIDE (__ram_rodata_start, ABSOLUTE (.))
+                0x0000a64c                . = ALIGN (0x4)
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x0000a64c       0x10 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_main.o)
+ .rodata        0x0000a65c       0x10 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .rodata        0x0000a66c        0xc D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_dev.o)
+ *(.rodata1)
+                0x0000a678                . = ALIGN (0x4)
+                0x0000a678                PROVIDE (__ram_rodata_end, ABSOLUTE (.))
+                0x0000a64c                PROVIDE (__flash_rodata_start, LOADADDR (.rodata))
+
+.rwdata         0x0000a678      0x1f0
+                0x0000a678                PROVIDE (__ram_rwdata_start, ABSOLUTE (.))
+                0x0000a678                . = ALIGN (0x4)
+ *(.got.plt)
+ *(.got)
+ *(.data1)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x0000a678        0x0 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp//obj/HAL/src/crt0.o
+ .data          0x0000a678        0x0 obj/default/main.o
+ .data          0x0000a678        0x0 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_main.o)
+ .data          0x0000a678       0x2c D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .data          0x0000a6a4        0x0 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .data          0x0000a6a4        0x0 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .data          0x0000a6a4        0x0 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .data          0x0000a6a4        0x0 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_avalon_spi.o)
+ .data          0x0000a6a4        0x0 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_close.o)
+ .data          0x0000a6a4      0x1a8 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_dev.o)
+                0x0000a6a4                alt_dev_null
+                0x0000a6cc                alt_fd_list
+ .data          0x0000a84c        0x0 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .data          0x0000a84c        0x0 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_errno.o)
+ .data          0x0000a84c        0x0 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_exit.o)
+ .data          0x0000a84c        0x0 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .data          0x0000a84c        0x0 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_open.o)
+ .data          0x0000a84c        0x0 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .data          0x0000a84c        0x0 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .data          0x0000a84c        0x0 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .data          0x0000a84c        0x0 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_find_file.o)
+ .data          0x0000a84c        0x0 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .data          0x0000a84c        0x0 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+ .data          0x0000a84c        0x0 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+ .data          0x0000a84c        0x0 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+                0x0001284c                _gp = ABSOLUTE ((. + 0x8000))
+                0x0001284c                PROVIDE (gp, _gp)
+ *(.rwdata .rwdata.*)
+ *(.sdata .sdata.* .gnu.linkonce.s.*)
+ .sdata         0x0000a84c        0x2 obj/default/main.o
+                0x0000a84c                bEcatLocalError
+                0x0000a84d                value_in
+ *fill*         0x0000a84e        0x2 
+ .sdata         0x0000a850       0x14 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_dev.o)
+                0x0000a850                alt_fs_list
+                0x0000a858                alt_dev_list
+                0x0000a860                alt_max_fd
+ .sdata         0x0000a864        0x4 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_errno.o)
+                0x0000a864                alt_errno
+ *(.sdata2 .sdata2.* .gnu.linkonce.s2.*)
+                0x0000a868                . = ALIGN (0x4)
+                0x0000a868                _edata = ABSOLUTE (.)
+                0x0000a868                PROVIDE (edata, ABSOLUTE (.))
+                0x0000a868                PROVIDE (__ram_rwdata_end, ABSOLUTE (.))
+                0x0000a678                PROVIDE (__flash_rwdata_start, LOADADDR (.rwdata))
+
+.bss            0x0000a868      0x160
+                0x0000a868                __bss_start = ABSOLUTE (.)
+                0x0000a868                PROVIDE (__sbss_start, ABSOLUTE (.))
+                0x0000a868                PROVIDE (___sbss_start, ABSOLUTE (.))
+ *(.dynsbss)
+ *(.sbss .sbss.* .gnu.linkonce.sb.*)
+ .sbss          0x0000a868        0xc obj/default/main.o
+                0x0000a868                bDcSyncActive
+                0x0000a869                master_8
+                0x0000a86a                master_16
+                0x0000a86c                master_32
+                0x0000a870                temp_flag
+ .sbss          0x0000a874       0x42 obj/default/main.o
+                0x0000a874                b3BufferMode
+                0x0000a875                m_maxsyncman
+                0x0000a876                m_mbxrunning
+                0x0000a877                m_pdooutrun
+                0x0000a878                pd_counter
+                0x0000a87c                pPdOutputData
+                0x0000a880                nAlStatus
+                0x0000a882                nPdOutputSize
+                0x0000a884                mb_counter
+                0x0000a888                nEscAddrOutputData
+                0x0000a88a                u16EscAddrReceiveMbx
+                0x0000a88c                pMbxReadData
+                0x0000a890                pPdInputData
+                0x0000a894                u16SendMbxSize
+                0x0000a896                nPdInputSize
+                0x0000a898                m_pdoinrun
+                0x0000a89a                u16EscAddrSendMbx
+                0x0000a89c                EscAlEvent
+                0x0000a8a0                nAlStatusFailed
+                0x0000a8a2                u16ReceiveMbxSize
+                0x0000a8a4                pMbxWriteData
+                0x0000a8a8                bEcatOutputUpdateRunning
+                0x0000a8a9                bEscIntEnabled
+                0x0000a8aa                nAlControl
+                0x0000a8ac                pEsc
+                0x0000a8b0                bWdTrigger
+                0x0000a8b2                nAlStatusCode
+                0x0000a8b4                nEscAddrInputData
+ *fill*         0x0000a8b6        0x2 
+ .sbss          0x0000a8b8        0xc D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_main.o)
+                0x0000a8b8                alt_argc
+                0x0000a8bc                alt_argv
+                0x0000a8c0                alt_envp
+ .sbss          0x0000a8c4        0x4 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+                0x0000a8c4                errno
+ *(.sbss2 .sbss2.* .gnu.linkonce.sb2.*)
+ *(.scommon)
+                0x0000a8c8                PROVIDE (__sbss_end, ABSOLUTE (.))
+                0x0000a8c8                PROVIDE (___sbss_end, ABSOLUTE (.))
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x0000a8c8        0x0 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp//obj/HAL/src/crt0.o
+ .bss           0x0000a8c8        0x0 obj/default/main.o
+ .bss           0x0000a8c8        0x0 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_main.o)
+ .bss           0x0000a8c8        0x0 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .bss           0x0000a8c8        0x0 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .bss           0x0000a8c8        0x0 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .bss           0x0000a8c8        0x0 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .bss           0x0000a8c8        0x0 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_avalon_spi.o)
+ .bss           0x0000a8c8        0x0 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_close.o)
+ .bss           0x0000a8c8        0x0 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_dev.o)
+ .bss           0x0000a8c8        0x0 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .bss           0x0000a8c8        0x0 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_errno.o)
+ .bss           0x0000a8c8        0x0 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_exit.o)
+ .bss           0x0000a8c8        0x0 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .bss           0x0000a8c8        0x0 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_open.o)
+ .bss           0x0000a8c8        0x0 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .bss           0x0000a8c8        0x0 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .bss           0x0000a8c8        0x0 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .bss           0x0000a8c8        0x0 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_find_file.o)
+ .bss           0x0000a8c8        0x0 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .bss           0x0000a8c8        0x0 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+ .bss           0x0000a8c8        0x0 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+ .bss           0x0000a8c8        0x0 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+ *(COMMON)
+ COMMON         0x0000a8c8      0x100 obj/default/main.o
+                0x0000a8c8                aMbOutputData
+                0x0000a908                aPdOutputData
+                0x0000a948                aMbInputData
+                0x0000a988                aPdInputData
+                0x0000a9c8                . = ALIGN (0x4)
+                0x0000a9c8                __bss_end = ABSOLUTE (.)
+
+.onchip_ram     0x0000a9c8        0x0
+                0x0000a9c8                PROVIDE (_alt_partition_onchip_ram_start, ABSOLUTE (.))
+ *(.onchip_ram .onchip_ram. onchip_ram.*)
+                0x0000a9c8                . = ALIGN (0x4)
+                0x0000a9c8                PROVIDE (_alt_partition_onchip_ram_end, ABSOLUTE (.))
+                0x0000a9c8                _end = ABSOLUTE (.)
+                0x0000a9c8                end = ABSOLUTE (.)
+                0x0000a9c8                __alt_stack_base = ABSOLUTE (.)
+                0x0000a9c8                PROVIDE (_alt_partition_onchip_ram_load_addr, LOADADDR (.onchip_ram))
+
+.epcs_flash     0x00011020        0x0
+                0x00011020                PROVIDE (_alt_partition_epcs_flash_start, ABSOLUTE (.))
+ *(.epcs_flash .epcs_flash. epcs_flash.*)
+                0x00011020                . = ALIGN (0x4)
+                0x00011020                PROVIDE (_alt_partition_epcs_flash_end, ABSOLUTE (.))
+                0x00011020                PROVIDE (_alt_partition_epcs_flash_load_addr, LOADADDR (.epcs_flash))
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x23
+ *(.comment)
+ .comment       0x00000000       0x23 obj/default/main.o
+                                 0x24 (size before relaxing)
+ .comment       0x00000000       0x24 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_main.o)
+ .comment       0x00000000       0x24 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .comment       0x00000000       0x24 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .comment       0x00000000       0x24 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .comment       0x00000000       0x24 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .comment       0x00000000       0x24 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_avalon_spi.o)
+ .comment       0x00000000       0x24 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_close.o)
+ .comment       0x00000000       0x24 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_dev.o)
+ .comment       0x00000000       0x24 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .comment       0x00000000       0x24 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_errno.o)
+ .comment       0x00000000       0x24 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_exit.o)
+ .comment       0x00000000       0x24 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .comment       0x00000000       0x24 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_open.o)
+ .comment       0x00000000       0x24 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .comment       0x00000000       0x24 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .comment       0x00000000       0x24 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .comment       0x00000000       0x24 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_find_file.o)
+ .comment       0x00000000       0x24 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .comment       0x00000000       0x24 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+ .comment       0x00000000       0x24 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+ .comment       0x00000000       0x24 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x2d0
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp//obj/HAL/src/crt0.o
+ .debug_aranges
+                0x00000020       0x20 obj/default/main.o
+ .debug_aranges
+                0x00000040       0x20 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_aranges
+                0x00000060       0x20 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_aranges
+                0x00000080       0x20 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_aranges
+                0x000000a0       0x20 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_aranges
+                0x000000c0       0x20 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_aranges
+                0x000000e0       0x20 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_avalon_spi.o)
+ .debug_aranges
+                0x00000100       0x20 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_aranges
+                0x00000120       0x20 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_aranges
+                0x00000140       0x20 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_aranges
+                0x00000160       0x18 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_aranges
+                0x00000178       0x20 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_exit.o)
+ .debug_aranges
+                0x00000198       0x20 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_aranges
+                0x000001b8       0x20 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_aranges
+                0x000001d8       0x20 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_aranges
+                0x000001f8       0x20 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_aranges
+                0x00000218       0x20 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_aranges
+                0x00000238       0x20 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_aranges
+                0x00000258       0x20 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_aranges
+                0x00000278       0x18 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+ .debug_aranges
+                0x00000290       0x20 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+ .debug_aranges
+                0x000002b0       0x20 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0x4815
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000       0x69 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp//obj/HAL/src/crt0.o
+ .debug_info    0x00000069     0x164b obj/default/main.o
+ .debug_info    0x000016b4      0x139 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_info    0x000017ed      0x413 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_info    0x00001c00      0x3da D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_info    0x00001fda      0x1bc D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_info    0x00002196      0x19f D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_info    0x00002335      0x18b D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_avalon_spi.o)
+ .debug_info    0x000024c0      0x350 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_info    0x00002810      0x4e3 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_info    0x00002cf3      0x1b9 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_info    0x00002eac       0xa3 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_info    0x00002f4f       0xec D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_exit.o)
+ .debug_info    0x0000303b      0x4f0 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_info    0x0000352b      0x3f0 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_info    0x0000391b      0x2dd D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_info    0x00003bf8       0x90 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_info    0x00003c88      0x30d D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_info    0x00003f95      0x30c D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_info    0x000042a1      0x339 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_info    0x000045da       0x84 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+ .debug_info    0x0000465e       0xf1 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+ .debug_info    0x0000474f       0xc6 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+
+.debug_abbrev   0x00000000     0x1380
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000       0x14 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp//obj/HAL/src/crt0.o
+ .debug_abbrev  0x00000014      0x288 obj/default/main.o
+ .debug_abbrev  0x0000029c       0xba D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_abbrev  0x00000356      0x155 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_abbrev  0x000004ab       0xf7 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_abbrev  0x000005a2       0xd5 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_abbrev  0x00000677       0xd5 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_abbrev  0x0000074c       0x8a D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_avalon_spi.o)
+ .debug_abbrev  0x000007d6      0x11f D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_abbrev  0x000008f5       0xd9 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_abbrev  0x000009ce      0x114 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_abbrev  0x00000ae2       0x5a D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_abbrev  0x00000b3c       0xa6 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_exit.o)
+ .debug_abbrev  0x00000be2      0x114 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_abbrev  0x00000cf6      0x148 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_abbrev  0x00000e3e       0xde D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_abbrev  0x00000f1c       0x42 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_abbrev  0x00000f5e       0xf0 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_abbrev  0x0000104e       0xf0 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_abbrev  0x0000113e      0x10d D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_abbrev  0x0000124b       0x37 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+ .debug_abbrev  0x00001282       0x7f d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+ .debug_abbrev  0x00001301       0x7f d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+
+.debug_line     0x00000000     0x164f
+ *(.debug_line)
+ .debug_line    0x00000000       0x57 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp//obj/HAL/src/crt0.o
+ .debug_line    0x00000057      0x309 obj/default/main.o
+ .debug_line    0x00000360       0x9e D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_line    0x000003fe      0x13c D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_line    0x0000053a      0x114 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_line    0x0000064e      0x101 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_line    0x0000074f       0xf8 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_line    0x00000847       0xb6 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_avalon_spi.o)
+ .debug_line    0x000008fd      0x186 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_line    0x00000a83      0x119 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_line    0x00000b9c       0xd0 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_line    0x00000c6c       0x51 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_line    0x00000cbd       0x71 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_exit.o)
+ .debug_line    0x00000d2e      0x154 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_line    0x00000e82      0x125 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_line    0x00000fa7       0xae D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_line    0x00001055       0x51 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_line    0x000010a6       0xb9 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_line    0x0000115f       0xd5 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_line    0x00001234       0xd1 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_line    0x00001305       0x5d d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+ .debug_line    0x00001362      0x17c d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+ .debug_line    0x000014de      0x171 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+
+.debug_frame    0x00000000      0x788
+ *(.debug_frame)
+ .debug_frame   0x00000000      0x37c obj/default/main.o
+ .debug_frame   0x0000037c       0x2c D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_frame   0x000003a8       0x64 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_frame   0x0000040c       0x48 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_frame   0x00000454       0x2c D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_frame   0x00000480       0x2c D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_frame   0x000004ac       0x2c D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_avalon_spi.o)
+ .debug_frame   0x000004d8       0x48 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_frame   0x00000520       0x2c D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_frame   0x0000054c       0x48 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_frame   0x00000594       0x2c D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_exit.o)
+ .debug_frame   0x000005c0       0x48 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_frame   0x00000608       0x64 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_frame   0x0000066c       0x2c D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_frame   0x00000698       0x2c D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_frame   0x000006c4       0x2c D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_frame   0x000006f0       0x2c D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_frame   0x0000071c       0x2c D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_frame   0x00000748       0x20 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+ .debug_frame   0x00000768       0x20 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+
+.debug_str      0x00000000     0x1502
+ *(.debug_str)
+ .debug_str     0x00000000      0xc05 obj/default/main.o
+                                0xcc8 (size before relaxing)
+ .debug_str     0x00000c05       0xa6 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_main.o)
+                                0x14b (size before relaxing)
+ .debug_str     0x00000cab      0x163 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_sys_init.o)
+                                0x293 (size before relaxing)
+ .debug_str     0x00000e0e       0x77 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+                                0x283 (size before relaxing)
+ .debug_str     0x00000e85       0x48 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+                                0x1cd (size before relaxing)
+ .debug_str     0x00000ecd       0x50 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                                0x1c3 (size before relaxing)
+ .debug_str     0x00000f1d       0xac D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_avalon_spi.o)
+                                0x18e (size before relaxing)
+ .debug_str     0x00000fc9       0x44 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_close.o)
+                                0x1b9 (size before relaxing)
+ .debug_str     0x0000100d      0x119 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_dev.o)
+                                0x2b3 (size before relaxing)
+ .debug_str     0x00001126       0x4b D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+                                0x17a (size before relaxing)
+ .debug_str     0x00001171       0x14 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_errno.o)
+                                 0xf3 (size before relaxing)
+ .debug_str     0x00001185       0x2a D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_exit.o)
+                                 0xff (size before relaxing)
+ .debug_str     0x000011af       0x56 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_io_redirect.o)
+                                0x2c4 (size before relaxing)
+ .debug_str     0x00001205       0x2f D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_open.o)
+                                0x1f9 (size before relaxing)
+ .debug_str     0x00001234       0x28 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_release_fd.o)
+                                0x18d (size before relaxing)
+ .debug_str     0x0000125c       0x3b D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+                                0x10a (size before relaxing)
+ .debug_str     0x00001297       0x24 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_find_dev.o)
+                                0x19a (size before relaxing)
+ .debug_str     0x000012bb       0x26 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_find_file.o)
+                                0x1a8 (size before relaxing)
+ .debug_str     0x000012e1       0x30 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_get_fd.o)
+                                0x1ca (size before relaxing)
+ .debug_str     0x00001311       0xd1 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+                                0x175 (size before relaxing)
+ .debug_str     0x000013e2       0xde d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+                                0x17c (size before relaxing)
+ .debug_str     0x000014c0       0x42 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+                                0x182 (size before relaxing)
+
+.debug_loc      0x00000000      0xa38
+ *(.debug_loc)
+ .debug_loc     0x00000000      0x554 obj/default/main.o
+ .debug_loc     0x00000554       0x2c D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_loc     0x00000580       0x84 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_loc     0x00000604       0x58 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_loc     0x0000065c       0x2c D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_loc     0x00000688       0x2c D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_loc     0x000006b4       0x2c D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_avalon_spi.o)
+ .debug_loc     0x000006e0       0x58 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_loc     0x00000738       0x2c D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_loc     0x00000764       0x58 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_loc     0x000007bc       0x2c D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_exit.o)
+ .debug_loc     0x000007e8       0x58 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_loc     0x00000840       0x84 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_loc     0x000008c4       0x2c D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_loc     0x000008f0       0x2c D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_loc     0x0000091c       0x2c D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_loc     0x00000948       0x2c D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_loc     0x00000974       0x2c D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_loc     0x000009a0       0x6f d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+ .debug_loc     0x00000a0f       0x29 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_alt_sim_info
+                0x00000000       0x20
+ *(.debug_alt_sim_info)
+ .debug_alt_sim_info
+                0x00000000       0x20 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp//obj/HAL/src/crt0.o
+                0x0000f800                __alt_data_end = 0xf800
+                0x0000f800                PROVIDE (__alt_stack_pointer, __alt_data_end)
+                0x0000a9c8                PROVIDE (__alt_stack_limit, __alt_stack_base)
+                0x0000a9c8                PROVIDE (__alt_heap_start, end)
+                0x0000f800                PROVIDE (__alt_heap_limit, 0xf800)
+OUTPUT(ssc-io.elf elf32-littlenios2)
+
+.debug_ranges   0x00000000       0x18
+ .debug_ranges  0x00000000       0x18 D:/Code/quartus/spi_123/qsys/software/ssc-io_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
